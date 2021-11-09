@@ -1,18 +1,14 @@
 import React from "react";
-import { Router, Route } from "react-router-dom";
 import { createBrowserHistory } from "history";
-import GreetingCat from "./GreetingCat";
-import RandomCat from "./RandomCat";
 import "./App.css";
 
 const defaultHistory = createBrowserHistory();
 
-function App({ history = defaultHistory }) {
+function App() {
   return (
-    <Router history={history}>
-      <Route exact path="/" component={RandomCat} />
-      <Route exact path="/cat/:greeting" component={GreetingCat} />
-    </Router>
+    <div className='footer'>
+      <h3>This is the footer</h3>
+    </div>
   );
 }
 
